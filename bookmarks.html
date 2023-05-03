@@ -6,16 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz-App</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="./index.js"></script>
   </head>
   <body>
     <header>
-      <h1>Quiz-App</h1>
+      <h1 class="header-name">Quiz-App</h1>
     </header>
     <main>
       <ul class="card-list">
         <li class="card-list__item">
-          <button class="card-bookmark" type="button">
+          <button
+            class="card-list__bookmark-button"
+            type="button"
+            aria-label="bookmark-button"
+          >
             <svg
+              class="card-list__bookmark-svg--clicked"
               xmlns="http://www.w3.org/2000/svg"
               class="icon icon-tabler icon-tabler-bookmark"
               width="3em"
@@ -25,7 +31,7 @@
               stroke="black"
               stroke-linecap="round"
               stroke-linejoin="round"
-              fill="black"
+              fill="none"
             >
               <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
               <path
@@ -33,24 +39,30 @@
               ></path>
             </svg>
           </button>
-          <h2 class="question">
+          <h2 class="card-list__question">
             What is Flexbox and what problem does it solve?
           </h2>
-          <button type="button" class="answer-button">
-            <p class="button-text">Show Answer</p>
+          <button
+            class="card-list__answer-button"
+            type="button"
+            aria-label="question-button"
+          >
+            <p class="card-list__answer-button-text">Show Answer</p>
           </button>
-          <ul class="tag-box-list">
-            <li class="tag-box-item">#html</li>
-            <li class="tag-box-item">#flexbox</li>
-            <li class="tag-box-item">#css</li>
+          <ul class="card-list__tag-list">
+            <li class="card-list__tag-item">#html</li>
+            <li class="card-list__tag-item">#flexbox</li>
+            <li class="card-list__tag-item">#css</li>
           </ul>
         </li>
-      </ul>
-      <ul class="card-list">
         <li class="card-list__item">
-          <button type="button">
+          <button
+            class="card-list__bookmark-button"
+            type="button"
+            aria-label="bookmark-button"
+          >
             <svg
-              class="card-bookmark"
+              class="card-list__bookmark-svg--clicked"
               xmlns="http://www.w3.org/2000/svg"
               class="icon icon-tabler icon-tabler-bookmark"
               width="3em"
@@ -60,7 +72,7 @@
               stroke="black"
               stroke-linecap="round"
               stroke-linejoin="round"
-              fill="black"
+              fill="none"
             >
               <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
               <path
@@ -68,24 +80,30 @@
               ></path>
             </svg>
           </button>
-          <h2 class="question">
-            What are the main components of Flexbox and what do they do?
+          <h2 class="card-list__question">
+            What is Flexbox and what problem does it solve?
           </h2>
-          <button type="button" class="answer-button">
-            <p class="button-text">Show Answer</p>
+          <button
+            class="card-list__answer-button"
+            type="button"
+            aria-label="question-button"
+          >
+            <p class="card-list__answer-button-text">Show Answer</p>
           </button>
-          <ul class="tag-box-list">
-            <li class="tag-box-item">#html</li>
-            <li class="tag-box-item">#flexbox</li>
-            <li class="tag-box-item">#css</li>
+          <ul class="card-list__tag-list">
+            <li class="card-list__tag-item">#html</li>
+            <li class="card-list__tag-item">#flexbox</li>
+            <li class="card-list__tag-item">#css</li>
           </ul>
         </li>
-      </ul>
-      <ul class="card-list">
-        <li class="question-card">
-          <button type="button">
+        <li class="card-list__item">
+          <button
+            class="card-list__bookmark-button"
+            type="button"
+            aria-label="bookmark-button"
+          >
             <svg
-              class="card-bookmark"
+              class="card-list__bookmark-svg--clicked"
               xmlns="http://www.w3.org/2000/svg"
               class="icon icon-tabler icon-tabler-bookmark"
               width="3em"
@@ -95,6 +113,7 @@
               stroke="black"
               stroke-linecap="round"
               stroke-linejoin="round"
+              fill="none"
             >
               <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
               <path
@@ -102,24 +121,28 @@
               ></path>
             </svg>
           </button>
-          <h2 class="question">
-            How do you define a flex container and a flex item in CSS?
+          <h2 class="card-list__question">
+            What is Flexbox and what problem does it solve?
           </h2>
-          <button type="button" class="answer-button">
-            <p class="button-text">Show Answer</p>
+          <button
+            class="card-list__answer-button"
+            type="button"
+            aria-label="question-button"
+          >
+            <p class="card-list__answer-button-text">Show Answer</p>
           </button>
-          <ul class="tag-box-list">
-            <li class="tag-box-item">#html</li>
-            <li class="tag-box-item">#flexbox</li>
-            <li class="tag-box-item">#css</li>
+          <ul class="card-list__tag-list">
+            <li class="card-list__tag-item">#html</li>
+            <li class="card-list__tag-item">#flexbox</li>
+            <li class="card-list__tag-item">#css</li>
           </ul>
         </li>
       </ul>
-      <nav class="nav-bar">
-        <ul class="nav-bar-list">
-          <li class="nav-bar-item">
-            <a href="./index.html"
-              ><svg
+      <nav class="navbar">
+        <ul class="navbar__list">
+          <li class="navbar__list-item">
+            <a href="#">
+              <svg
                 class="home-anchor"
                 xmlns="http://www.w3.org/2000/svg"
                 width="2em"
@@ -140,8 +163,8 @@
               </svg>
             </a>
           </li>
-          <li class="nav-bar-item">
-            <a href="#"
+          <li class="navbar__list-item">
+            <a href="./bookmarks.html"
               ><svg
                 class="bookmark-anchor"
                 xmlns="http://www.w3.org/2000/svg"
@@ -150,10 +173,9 @@
                 height="2em"
                 viewBox="0 0 24 24"
                 stroke-width="2"
-                stroke="black"
                 stroke-linecap="round"
                 stroke-linejoin="round"
-                fill="black"
+                fill="white"
               >
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                 <path
@@ -162,7 +184,7 @@
               </svg>
             </a>
           </li>
-          <li class="nav-bar-item">
+          <li class="navbar__list-item">
             <a href="#"
               ><svg
                 xmlns="http://www.w3.org/2000/svg"

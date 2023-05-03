@@ -1,19 +1,33 @@
 
 .card-list__bookmark-button {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: -1rem;
+    right: 1rem;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+  }
+
+  .card-list__bookmark-svg {
+    fill: var(--body-color);
+  }
+
+  .card-list__bookmark-svg--clicked {
+    fill: var(--main-color);
   }
   
   .card-list__answer-button {
     width: 25%;
     height: 50px;
+    margin: 30px auto;
+    padding: 5px;
     border-radius: 10px;
     background-color: var(--main-color);
   }
   .card-list__answer-button:hover {
     background: var(--body-color);
     color: var(--secondary-color);
+    cursor: pointer;
   }
   
   .card-list__answer-button-text {
