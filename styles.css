@@ -49,6 +49,7 @@ header {
   list-style-type: none;
   border-radius: 5%;
   background-color: white;
+  width: 80%;
 }
 .answer-button {
   width: 25%;
@@ -110,8 +111,9 @@ header {
   background-color: #caaa36;
 }
 
-svg {
-  color: white;
+.bookmark-anchor:focus {
+  background-color: #caaa36;
 }
-svg.bookmark {
+.bookmark-anchor:visited {
+  background-color: #caaa36;
 }
