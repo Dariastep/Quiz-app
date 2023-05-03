@@ -16,6 +16,7 @@ h1 {
 }
 
 header {
+  z-index: 1;
   overflow: hidden;
   position: fixed;
   top: 0;
@@ -41,20 +42,21 @@ header {
   padding: 0 30px;
 }
 .question-card {
+  position: relative;
   margin: 10px auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 50px;
   list-style-type: none;
-  border-radius: 5%;
+  border-radius: 10px;
   background-color: white;
   width: 80%;
 }
 .answer-button {
   width: 25%;
   height: 50px;
-  border-radius: 10%;
+  border-radius: 10px;
   background-color: #caaa36;
 }
 .answer-button:hover {
@@ -72,12 +74,12 @@ header {
   justify-content: flex-start;
   width: 100%;
   gap: 10px;
-  margin-left: 20px;
-  margin-bottom: 15px;
+  margin-left: 40px;
+  margin-bottom: 20px;
 }
 .tag-box-item {
   border: 1px solid black;
-  border-radius: 15%;
+  border-radius: 2em;
   padding: 5px;
   background-color: #dce3f9;
 }
@@ -99,6 +101,7 @@ header {
   justify-content: space-around;
   align-items: center;
 }
+
 .nav-bar-item a {
   display: inline-flex;
   padding: 1.5em 5em;
@@ -116,4 +119,9 @@ header {
 }
 .bookmark-anchor:visited {
   background-color: #caaa36;
+}
+.bookmark {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
