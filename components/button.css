@@ -1,0 +1,22 @@
+
+.card-list__bookmark-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  
+  .card-list__answer-button {
+    width: 25%;
+    height: 50px;
+    border-radius: 10px;
+    background-color: var(--main-color);
+  }
+  .card-list__answer-button:hover {
+    background: var(--body-color);
+    color: var(--secondary-color);
+  }
+  
+  .card-list__answer-button-text {
+    font-size: 15px;
+  }
+  
