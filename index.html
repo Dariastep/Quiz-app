@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz-App</title>
     <link rel="stylesheet" href="styles.css" />
-    <script src="./index.js"></script>
+    <script src="./index.js" defer></script>
   </head>
   <body>
     <header>
@@ -19,6 +19,50 @@
             class="card-list__bookmark-button"
             type="button"
             aria-label="bookmark-button"
+            data-js="card-list__bookmark-button"
+          >
+            <svg
+              class="card-list__bookmark-svg"
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-bookmark"
+              width="3em"
+              height="3em"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="black"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              fill="none"
+              data-js="card-list__bookmark-button--enable"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path
+                d="M9 4h6a2 2 0 0 1 2 2v14l-5 -3l-5 3v-14a2 2 0 0 1 2 -2"
+              ></path>
+            </svg>
+          </button>
+          <h2 class="card-list__question">
+            What is Flexbox and what problem does it solve?
+          </h2>
+          <button
+            class="card-list__answer-button"
+            type="button"
+            aria-label="question-button"
+          >
+            <p class="card-list__answer-button-text">Show Answer</p>
+          </button>
+          <ul class="card-list__tag-list">
+            <li class="card-list__tag-item">#html</li>
+            <li class="card-list__tag-item">#flexbox</li>
+            <li class="card-list__tag-item">#css</li>
+          </ul>
+        </li>
+        <li class="card-list__item">
+          <button
+            class="card-list__bookmark-button"
+            type="button"
+            aria-label="bookmark-button"
+            data-js="card-list__bookmark-button"
           >
             <svg
               class="card-list__bookmark-svg"
@@ -60,47 +104,7 @@
             class="card-list__bookmark-button"
             type="button"
             aria-label="bookmark-button"
-          >
-            <svg
-              class="card-list__bookmark-svg"
-              xmlns="http://www.w3.org/2000/svg"
-              class="icon icon-tabler icon-tabler-bookmark"
-              width="3em"
-              height="3em"
-              viewBox="0 0 24 24"
-              stroke-width="2"
-              stroke="black"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              fill="none"
-            >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-              <path
-                d="M9 4h6a2 2 0 0 1 2 2v14l-5 -3l-5 3v-14a2 2 0 0 1 2 -2"
-              ></path>
-            </svg>
-          </button>
-          <h2 class="card-list__question">
-            What is Flexbox and what problem does it solve?
-          </h2>
-          <button
-            class="card-list__answer-button"
-            type="button"
-            aria-label="question-button"
-          >
-            <p class="card-list__answer-button-text">Show Answer</p>
-          </button>
-          <ul class="card-list__tag-list">
-            <li class="card-list__tag-item">#html</li>
-            <li class="card-list__tag-item">#flexbox</li>
-            <li class="card-list__tag-item">#css</li>
-          </ul>
-        </li>
-        <li class="card-list__item">
-          <button
-            class="card-list__bookmark-button"
-            type="button"
-            aria-label="bookmark-button"
+            data-js="card-list__bookmark-button"
           >
             <svg
               class="card-list__bookmark-svg"

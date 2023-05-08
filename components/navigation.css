@@ -23,16 +23,16 @@
   }
   
   .navbar__list-item:hover {
-    background-color: var(--main-color);
+    background-color: var(--action-color);
   }
   .navbar__list-item:active {
-    background-color: var(--main-color);
+    background-color: var(--action-color);
   }
   
   .bookmark-anchor:focus {
-    background-color: var(--main-color);
+    background-color: var(--action-color);
   }
   .bookmark-anchor:visited {
-    background-color: var(--main-color);
+    background-color: var(--action-color);
   }
   
