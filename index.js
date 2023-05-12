@@ -7,15 +7,14 @@ cards.forEach((card) => {
   const bookmarkSvg = card.querySelector(
     '[data-js="card-list__bookmark-svg--clicked"]'
   );
+  const showAnswer = card.querySelector('[data-js="show-answer"]');
+  const answerButton = card.querySelector('[data-js="answer-button"]');
+
   bookmarkSave.addEventListener("click", () => {
     bookmarkSvg.classList.toggle("card-list__bookmark-svg--clicked");
   });
 
-  const answerButton = card.querySelector(
-    '[data-js="card-list__answer-button"]'
-  );
-  const showAnswer = document.querySelector('[data-js="card-list__answer"]');
-  answerButton.addEventListener("click", () => {
-    showAnswer.hidden = false;
+  answerButton.addEventListener("click", function () {
+    showAnswer.classList.toggle("hidden");
   });
 });
