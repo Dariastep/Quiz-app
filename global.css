@@ -1,26 +1,24 @@
 :root {
-    --main-color: #caaa36;
-    --secondary-color: #2b2d36;
-    --body-color: #9e8daa;
-  }
-  
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  body {
-    background-color: var(--body-color);
-  }
-  
-  h1 {
-    font-size: 2em;
-    color: var(--main-color);
-  }
-  
-  main {
-    margin: 100px 0;
-  }
-  
+  --primary-color: #c4bcda;
+  --secondary-color: #2b2d36;
+  --action-color: #caaa36;
+  --tertiary-color: #fcf9ff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+h1 {
+  font-size: 2em;
+  color: var(--action-color);
+}
+
+main {
+  margin: 100px 0;
+}
