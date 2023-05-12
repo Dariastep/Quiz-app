@@ -13,8 +13,8 @@
       <h1 class="header-name">Quiz-App</h1>
     </header>
     <main>
-      <ul class="card-list" aria-label = "Quiz cards">
-        <li class="card-list__item">
+      <ul class="card-list" aria-label="Quiz cards">
+        <li class="card-list__item" data-js="card-list__item">
           <button
             class="card-list__bookmark-button"
             type="button"
@@ -33,7 +33,7 @@
               stroke-linecap="round"
               stroke-linejoin="round"
               fill="none"
-              data-js="card-list__bookmark-button--enable"
+              data-js="card-list__bookmark-svg--clicked"
             >
               <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
               <path
@@ -47,17 +47,21 @@
           <button
             class="card-list__answer-button"
             type="button"
-            aria-label="question-button"
+            aria-label="answer-button"
+            data-js="card-list__answer-button"
           >
             <p class="card-list__answer-button-text">Show Answer</p>
           </button>
+          <p class="card-list__answer" data-js="card-list__answer" hidden>
+            Answer
+        </p>
           <ul class="card-list__tag-list">
             <li class="card-list__tag-item">#html</li>
             <li class="card-list__tag-item">#flexbox</li>
             <li class="card-list__tag-item">#css</li>
           </ul>
         </li>
-        <li class="card-list__item">
+        <li class="card-list__item" data-js="card-list__item">
           <button
             class="card-list__bookmark-button"
             type="button"
@@ -76,6 +80,7 @@
               stroke-linecap="round"
               stroke-linejoin="round"
               fill="none"
+              data-js="card-list__bookmark-svg--clicked"
             >
               <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
               <path
@@ -89,17 +94,21 @@
           <button
             class="card-list__answer-button"
             type="button"
-            aria-label="question-button"
+            aria-label="answer-button"
+            data-js="card-list__answer-button"
           >
             <p class="card-list__answer-button-text">Show Answer</p>
           </button>
+          <p class="card-list__answer" data-js="card-list__answer" hidden>
+            Answer
+        </p>
           <ul class="card-list__tag-list">
             <li class="card-list__tag-item">#html</li>
             <li class="card-list__tag-item">#flexbox</li>
             <li class="card-list__tag-item">#css</li>
           </ul>
         </li>
-        <li class="card-list__item">
+        <li class="card-list__item" data-js="card-list__item">
           <button
             class="card-list__bookmark-button"
             type="button"
@@ -118,6 +127,7 @@
               stroke-linecap="round"
               stroke-linejoin="round"
               fill="none"
+              data-js="card-list__bookmark-svg--clicked"
             >
               <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
               <path
@@ -132,9 +142,13 @@
             class="card-list__answer-button"
             type="button"
             aria-label="question-button"
+            data-js="card-list__answer-button"
           >
             <p class="card-list__answer-button-text">Show Answer</p>
           </button>
+          <p class="card-list__answer" data-js="card-list__answer" hidden>
+            Answer
+        </p>
           <ul class="card-list__tag-list">
             <li class="card-list__tag-item">#html</li>
             <li class="card-list__tag-item">#flexbox</li>
@@ -143,7 +157,7 @@
         </li>
       </ul>
     </main>
-      <footer>
+    <footer>
       <nav class="navbar">
         <ul class="navbar__list">
           <li class="navbar__list-item">
@@ -208,6 +222,6 @@
           </li>
         </ul>
       </nav>
-  </footer>
+    </footer>
   </body>
 </html>

@@ -23,6 +23,14 @@
     margin: auto;
     
   }
+  .card-list__answer {
+    padding: 1rem 1rem 0;
+    text-align: center;
+    margin: 0px auto 30px ;
+    font-size: 24px;
+    font-weight: 500;
+    
+  }
   .card-list__tag-list{
     list-style-type: none;
     display: flex;
