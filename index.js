@@ -1,4 +1,4 @@
-const cards = document.querySelectorAll('[data-js="card-list__item"]');
+const cards = document.querySelectorAll('[data-js="question-card"]');
 
 cards.forEach((card) => {
   const bookmarkSave = card.querySelector(

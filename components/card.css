@@ -1,9 +1,9 @@
-.card-list {
+.card-container {
   display: flex;
   flex-direction: column;
 }
 
-.card-list__item {
+.question-card {
   position: relative;
   margin: 10px auto;
   display: flex;
