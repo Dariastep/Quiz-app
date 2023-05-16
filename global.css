@@ -1,3 +1,9 @@
+@import "./src/styles/button.css";
+@import "./src/styles/card.css";
+@import "./src/styles/header.css";
+@import "./src/styles/navigation.css";
+@import "./global.css";
+
 :root {
   --primary-color: #c4bcda;
   --secondary-color: #2b2d36;
@@ -11,9 +17,6 @@
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
-
-
-
 
 main {
   margin: 100px 0;
