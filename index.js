@@ -1,4 +1,10 @@
+import { createHeaderApp } from "./components/Header/header.js";
+import { createCard } from "./components/Card/card.js";
+
 const cards = document.querySelectorAll('[data-js="question-card"]');
+
+createHeaderApp();
+createCard();
 
 cards.forEach((card) => {
   const bookmarkSave = card.querySelector(

@@ -1,8 +1,7 @@
-@import "./src/styles/button.css";
-@import "./src/styles/card.css";
-@import "./src/styles/header.css";
-@import "./src/styles/navigation.css";
-@import "./global.css";
+@import "./components/Button/button.css";
+@import "./components/Card/card.css";
+@import "./components/Header/header.css";
+@import "./components/Navigation/navigation.css";
 
 :root {
   --primary-color: #c4bcda;

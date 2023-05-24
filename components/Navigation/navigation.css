@@ -1,0 +1,37 @@
+.navbar {
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  height: auto;
+  width: 100%;
+  background-color: var(--secondary-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar__list {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar__list-item a {
+  display: block;
+}
+
+.navbar__list-item:hover {
+  background-color: var(--action-color);
+}
+.navbar__list-item:active {
+  background-color: var(--action-color);
+}
+
+.bookmark-anchor:focus {
+  background-color: var(--action-color);
+}
+.bookmark-anchor:visited {
+  background-color: var(--action-color);
+}
