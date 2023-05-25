@@ -47,7 +47,7 @@ export function createCard() {
     svgElement.appendChild(pathElement);
   
     // Append the SVG element to the card
-    cardItem.append(svgElement);
+    bookmarkButton.append(svgElement);
   
     return cardItem;
   }
