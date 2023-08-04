@@ -11,7 +11,7 @@ Happy quizzing!
 
 ### 💡 Demo
 
-|![quiz-app](https://github.com/Dariastep/Quiz-App/assets/123622878/e8b97137-30fc-49ff-bbb9-39079eb44d15) 
+![quiz-app](https://github.com/Dariastep/Quiz-App/assets/123622878/e8b97137-30fc-49ff-bbb9-39079eb44d15) 
 
 ### 💡 Local development
 
